@@ -1,0 +1,282 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard Example</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/humge-ui-framework.min.css" rel="stylesheet" type="text/css">
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+  <script src="js/humge-ui-framework.min.js"></script>
+</head>
+
+<body class="fade">
+  <div class="container">
+    <header class="h60 white-text shadow">
+      <div class="left">
+        <div class="pad-top-20 pad-left-10 left w60">
+          <div class="menu-call" onclick="$('.navigation').toggleClass('open');$('.container').toggleClass('open');$(this).toggleClass('open');">
+            <span></span></div>
+        </div>
+        <div class="logo right pad-top-10"></div>
+      </div>
+      <div class="right">
+        <div class="tool-icon inline pointer" onclick="$(this).find('.menu').toggleClass('open');">
+          <span class="pad-right-10">
+              <img src="https://www.incimages.com/uploaded_files/image/100x100/IN0318COL02_350484.jpg" class="round w40">
+            </span>
+          <span class="lh40 bold">Your Name</span>
+          <div class="menu shadow text-left black-text" onclick="$(this).toggleClass('open');">
+            <div class="user-info pad-20">
+              <p class=" font14 red-text ">Your Name</p>
+              <p class="mrg-top-5 font08  mrg-bottom-10">you@domain.com</p>
+              <button>Logout</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="wraper mrg-auto">
+        <h1>Dashboard</h1>
+        <!-- container start here-->
+        <div class="row">
+          <div class="col-30 shadow pad-20">
+            <h2 class="mrg-bottom-30">Form elements</h2>
+            <div class="row">
+              <input type="text" placeholder="standart input"/>
+
+
+
+
+
+
+
+              </div>
+            <div class="row">
+              <input type="text" placeholder="e-mail input" humge-type="email"/>
+
+
+
+
+
+
+
+              </div>
+            <div class="row">
+              <input type="text" placeholder="username input" humge-type="user"/>
+
+
+
+
+
+
+
+              </div>
+            <div class="row">
+              <input type="password" placeholder="password input" humge-type="password"/>
+
+
+
+
+
+
+
+              </div>
+            <div class="row">
+              <input type="date" placeholder="date input" humge-type="date"/>
+
+
+
+
+
+
+
+              </div>
+            <div class="row">
+              <select>
+                  <option>
+                    Option 1
+                  </option>
+                  <option>
+                    Option 2
+                  </option>
+                </select>
+            </div>
+            <div class="row">
+              <textarea style="height:100px;"></textarea>
+            </div>
+            <div class="row">
+              <label><input type="checkbox"/>
+                  Checkbox</label>
+            </div>
+            <div class="row">
+              <label><input type="radio"/>Radio</label>
+            </div>
+            <div class="row">
+              <div class="left lh30">
+                <strong>Swith</strong>
+              </div>
+              <div class="right">
+                <input type="checkbox" humge-type="switch"/></div>
+            </div>
+          </div>
+          <div class="col-40">
+            <div class="shadow mrg-bottom-30 pad-20">
+              <h2 class="mrg-bottom-30">Typography</h2>
+              <h1>Title 1</h1>
+              <h2>Title 2</h2>
+              <h3>Title 3</h3>
+              <h4>Title 4</h4>
+              <h5>Title 5</h5>
+              <h6>Title 6</h6>
+            </div>
+            <div class="shadow mrg-bottom-30 pad-20">
+              <h2 class="mrg-bottom-30">Buttons</h2>
+              <div class="row">
+                <div class="col-50">
+                  <div class="row">
+                    <button class="button-small">Small button</button>
+                  </div>
+                  <div class="row">
+                    <button class="button">Medium button</button>
+                  </div>
+                  <div class="row">
+                    <button class="button-big">Large button</button>
+                  </div>
+                </div>
+                <div class="col-50">
+                  <div class="row">
+                    <button class="button-small action">Small button</button>
+                  </div>
+                  <div class="row">
+                    <button class="button action">Medium button</button>
+                  </div>
+                  <div class="row">
+                    <button class="button-big action">Large button</button>
+                  </div>
+                </div>
+              </div>
+              <div class="row relative text-right">
+                <button class="round-button">
+                    <span>Button title</span></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-30 shadow pad-20">
+            <h2 class="mrg-bottom-30">Tabs & Accordions</h2>
+            <div class="row">
+              <ul class="tabs" humge-type="tabs">
+                <li tab="tab_name1" class="current">TAB 1</li>
+                <li tab="tab_name2">TAB 2</li>
+                <li tab="tab_name3">TAB 3</li>
+                <li tab="tab_name4">TAB 4</li>
+              </ul>
+              <div humge-tab="tab_name1">content 1</div>
+              <div humge-tab="tab_name2">content 2</div>
+              <div humge-tab="tab_name3">content 3</div>
+              <div humge-tab="tab_name4">content 4</div>
+            </div>
+            <dl humge-type="accordion" humge-open="true"> <dt >Title 1</dt>
+              <dd>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                specimen book.</dd> <dt>Title 2</dt>
+              <dd>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                specimen book.</dd> <dt>Title 3</dt>
+              <dd>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                specimen book.</dd>
+            </dl>
+          </div>
+        </div>
+        <div class="row end shadow pad-20">
+          <div class="table-container">
+            <table class="stript">
+              <thead>
+                <tr>
+                  <th><label><input type="checkbox" /></label> </th>
+                  <th> Col 2 </th>
+                  <th> Col 3 </th>
+                  <th> Col 1 </th>
+                  <th> Col 2 </th>
+                  <th> Col 3 </th>
+                  <th> Col 1 </th>
+                  <th> Col 2 </th>
+                  <th> Col 3 </th>
+                  <th> Col 1 </th>
+                  <th> Col 2 </th>
+                  <th> Col 3 </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><label><input type="checkbox" /></label> </td>
+                  <td> Name 2 </td>
+                  <td> Name 3 </td>
+                  <td> Name 1 </td>
+                  <td> Name 2 </td>
+                  <td> Name 3 </td>
+                  <td> Name 1 </td>
+                  <td> Name 2 </td>
+                  <td> Name 3 </td>
+                  <td> Name 1 </td>
+                  <td> Name 2 </td>
+                  <td> Name 3 </td>
+                </tr>
+                <tr>
+                  <td><label><input type="checkbox" /></label> </td>
+                  <td> Name 2 </td>
+                  <td> Name 3 </td>
+                  <td> Name 1 </td>
+                  <td> Name 2 </td>
+                  <td> Name 3 </td>
+                  <td> Name 1 </td>
+                  <td> Name 2 </td>
+                  <td> Name 3 </td>
+                  <td> Name 1 </td>
+                  <td> Name 2 </td>
+                  <td> Name 3 </td>
+                </tr>
+                <tr>
+                  <td><label><input type="checkbox" /></label> </td>
+                  <td> Name 2 </td>
+                  <td> Name 3 </td>
+                  <td> Name 1 </td>
+                  <td> Name 2 </td>
+                  <td> Name 3 </td>
+                  <td> Name 1 </td>
+                  <td> Name 2 </td>
+                  <td> Name 3 </td>
+                  <td> Name 1 </td>
+                  <td> Name 2 </td>
+                  <td> Name 3 </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- container end-->
+      </div>
+    </main>
+  </div>
+  <nav class="navigation">
+    <div class="logo pad-10 pad-left-50 font30">Logo</div>
+    <ul>
+      <li>
+        <a href="/">
+            <span class=" font08">
+              <i class="material-icons">donut_large</i>
+            </span>
+            <span class="lh40">Link 1</span></a>
+      </li>
+      <li>
+        <a href="/">
+            <span class=" font08">
+              <i class="material-icons">account_balance</i>
+            </span>
+            <span class="lh40">Link 2</span></a>
+      </li>
+    </ul>
+  </nav>
+</body>
+
+</html>

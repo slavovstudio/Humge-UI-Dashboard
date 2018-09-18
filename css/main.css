@@ -1,0 +1,9 @@
+.login-bg {
+  background-image: url('https://enbaca.com/web/assets/image-resources/blurred-bg/blurred-bg-7.jpg');
+  background-size: cover;
+}
+
+.login {
+  top: 25%;
+  position: relative;
+}
