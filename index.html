@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/humge-ui-framework.min.css" rel="stylesheet" type="text/css">
   <link href="css/main.css" rel="stylesheet" type="text/css">
-  <script src="js/humge-ui-framework.min.js"></script>
+  <!--<script src="js/humge-ui-framework.min.js"></script>-->
 </head>
 
 <body class="fade">
@@ -45,57 +45,36 @@
           <div class="col-30 shadow pad-20">
             <h2 class="mrg-bottom-30">Form elements</h2>
             <div class="row">
-              <input type="text" placeholder="standart input"/>
-
-
-
-
-
-
-
+              <div humge-type="text"> <input type="text"   humge-type="date"/>
+                <label>Label here</label>
+                <span></span>
               </div>
+            </div>
             <div class="row">
-              <input type="text" placeholder="e-mail input" humge-type="email"/>
-
-
-
-
-
-
-
+              <div humge-type="email"> <input type="password"  placeholder="Text here" />
+                <span></span>
               </div>
+            </div>
             <div class="row">
-              <input type="text" placeholder="username input" humge-type="user"/>
-
-
-
-
-
-
-
+              <div humge-type="user"> <input type="password"  placeholder="Text here" disabled />
+                <span></span>
               </div>
+            </div>
             <div class="row">
-              <input type="password" placeholder="password input" humge-type="password"/>
-
-
-
-
-
-
-
+              <div humge-type="password">
+                <input type="password"  humge-type="password" />
+                <label>Password</label>
+                <span></span>
               </div>
+            </div>
             <div class="row">
-              <input type="date" placeholder="date input" humge-type="date"/>
-
-
-
-
-
-
-
+              <div humge-type="date"> <input type="date"/>
+                <span></span>
               </div>
+            </div>
             <div class="row">
-              <select>
+              <div humge-type="select">
+                <select>
                   <option>
                     Option 1
                   </option>
@@ -103,23 +82,31 @@
                     Option 2
                   </option>
                 </select>
+              </div>
             </div>
             <div class="row">
-              <textarea style="height:100px;"></textarea>
+              <div humge-type="textarea">
+                <textarea style="height:100px;"></textarea>
+                <span></span>
+              </div>
             </div>
             <div class="row">
               <label><input type="checkbox"/>
-                  Checkbox</label>
+                  Checkbox
+                <span></span></label>
             </div>
-            <div class="row">
-              <label><input type="radio"/>Radio</label>
-            </div>
+            <form class="row">
+              <label><input type="radio" name="test" disabled/>Radio<span></span></label>
+              <label><input type="radio" name="test"/>Radio<span></span></label>
+              <label><input type="radio" name="test"/>Radio<span></span></label>
+            </form>
             <div class="row">
               <div class="left lh30">
                 <strong>Swith</strong>
               </div>
               <div class="right">
-                <input type="checkbox" humge-type="switch"/></div>
+                <label humge-type="switch">
+                <input type="checkbox" humge-type="switch" /><span></span></label></div>
             </div>
           </div>
           <div class="col-40">
@@ -154,7 +141,7 @@
                     <button class="button action">Medium button</button>
                   </div>
                   <div class="row">
-                    <button class="button-big action">Large button</button>
+                    <button class="button-big action" disabled>Large button</button>
                   </div>
                 </div>
               </div>
@@ -193,7 +180,9 @@
             <table class="stript">
               <thead>
                 <tr>
-                  <th><label><input type="checkbox" /></label> </th>
+                  <th> <label><input type="checkbox"/>
+
+                      <span></span></label> </th>
                   <th> Col 2 </th>
                   <th> Col 3 </th>
                   <th> Col 1 </th>
@@ -209,7 +198,9 @@
               </thead>
               <tbody>
                 <tr>
-                  <td><label><input type="checkbox" /></label> </td>
+                  <td> <label><input type="checkbox"/>
+
+                      <span></span></label> </td>
                   <td> Name 2 </td>
                   <td> Name 3 </td>
                   <td> Name 1 </td>
@@ -223,7 +214,9 @@
                   <td> Name 3 </td>
                 </tr>
                 <tr>
-                  <td><label><input type="checkbox" /></label> </td>
+                  <td> <label><input type="checkbox"/>
+
+                      <span></span></label> </td>
                   <td> Name 2 </td>
                   <td> Name 3 </td>
                   <td> Name 1 </td>
@@ -237,7 +230,9 @@
                   <td> Name 3 </td>
                 </tr>
                 <tr>
-                  <td><label><input type="checkbox" /></label> </td>
+                  <td> <label><input type="checkbox"/>
+
+                      <span></span></label> </td>
                   <td> Name 2 </td>
                   <td> Name 3 </td>
                   <td> Name 1 </td>
